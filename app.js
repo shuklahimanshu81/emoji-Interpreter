@@ -7,7 +7,12 @@ var emojiDictionary = {
   "😲": "disbelief",
   "😞": "sad",
   "😭": "crying",
-  "😡": "angry"
+  "😡": "angry",
+  "😘": "Face Blowing a Kiss",
+  "🤪": "Zany Face",
+  "😴": "Sleeping Face",
+  "🤩": "Excited",
+  "🤗": "Hugs"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -19,7 +24,7 @@ export default function App() {
     var meaning = emojiDictionary[userInput];
 
     if (meaning === undefined) {
-      meaning = " we don't have this in out database ";
+      meaning = " we don't have this in our database ";
     }
     setMeaning(meaning);
   }
